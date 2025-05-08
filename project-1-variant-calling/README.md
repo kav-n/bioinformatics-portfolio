@@ -16,10 +16,22 @@ This project demonstrates a simplified variant calling pipeline using whole geno
 - `vep` for annotation
 - `conda` for reproducibility
 
-## Input Data
-- Public dataset: NA12878 (Genome in a Bottle)
-- Reference genome: GRCh38
-- Download details in `data/README.md`
+### 📦 Dataset Used
+
+For testing and demonstration purposes, this pipeline uses paired-end whole-genome sequencing (WGS) data from the **1000 Genomes Project**.
+
+- **Sample ID**: HG00096  
+- **ENA Accession**: [ERR000589](https://www.ebi.ac.uk/ena/browser/view/ERR000589)  
+- **Source**: European Nucleotide Archive (ENA)  
+- **Data Type**: Illumina HiSeq paired-end FASTQ files  
+- **File Size**: ~150 MB per file (compressed)
+
+#### 🔗 Download Links:
+- [ERR000589_1.fastq.gz (R1)](https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000589/ERR000589_1.fastq.gz)
+- [ERR000589_2.fastq.gz (R2)](https://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000589/ERR000589_2.fastq.gz)
+
+This dataset provides real human sequencing data while being small enough for quick testing, development, and demonstration of the variant calling pipeline. It replaces the previously intended Genome in a Bottle (GIAB) HG002 dataset for easier accessibility and faster processing during development.
+
 
 ## Project Structure
 project-1-variant-calling/ ├── data/ ├── scripts/ ├── results/ ├── reports/ ├── environment.yml ├── README.md

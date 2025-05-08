@@ -1,9 +1,17 @@
 # Data Folder
 
-## FASTQ Test Data (NA12878, small subset)
-Paired-end reads for testing variant calling pipeline:
+This folder contains input data required to run the variant calling pipeline.
 
-- Read 1: https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/reads/NA12878_chr20_1M_R1.fastq.gz
-- Read 2: https://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/data/NA12878/NIST_NA12878_HG001_HiSeq_300x/reads/NA12878_chr20_1M_R2.fastq.gz
+## Contents
 
-These are a small test region from the Genome in a Bottle NA12878 sample.
+- **Paired-end FASTQ files**  
+  Raw sequencing reads used as input for alignment (e.g., `ERR000589_1.fastq.gz`, `ERR000589_2.fastq.gz`).
+
+- **Reference genome**  
+  The reference FASTA file used for alignment and variant calling (e.g., `GRCh38.fa`) and its associated index files (`.fai`, `.dict`, BWA index files).
+
+## Notes
+
+- Large data files such as FASTQs and reference genomes should **not be committed to version control**. These files are listed in `.gitignore`.
+- Download instructions and dataset details are documented in the main `README.md` file.
+- Ensure filenames are clearly labeled (e.g., `_1` and `_2` for paired-end reads) for compatibility with the pipeline.
